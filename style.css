@@ -14,3 +14,19 @@ a,span {
     color: white;
 }
 
+body{
+    margin: auto;
+    background-color: lightgrey;
+}
+#body{
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: lightblue;
+}
+
+
+#fekete{
+    color: black;
+}
+
