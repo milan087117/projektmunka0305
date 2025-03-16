@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projektdokumentáció</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,85 +13,115 @@
         <h1 class="display-4">Projektmenedzsment</h1></div>
         <img id="mechwart" src="mehwart_f1dce688ee.png" alt="Mechwart logó" title="Mechwart logó">
        
-        <nav class="navbar navbar-expand-sm">
-
-            <div class="container-fluid">
-              <ul class="navbar-nav" style="margin: auto;">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><span>Kezdőoldal</span></a>
+        <nav class="navbar navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="feher" href="#">Projektmunka</a>
+            <button class="navbar-toggler-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Oldalak:</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav" style="margin: auto;">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html"><span>Kezdőoldal</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cpm.html"><span>CPM</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mpm.html"><span>MPM</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kockazatelemzes.html"><span>Kockázatelemzés</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="koltsegek.html"><span>Költségek becslése</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="kiegyensulyozas.html"><span>Kiegyensúlyozás</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projektdokumentacio.html"><span>Projektdukumentáció</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="cpm.html"><span>CPM</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mpm.html"><span>MPM</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kockazatelemzes.html"><span>Kockázatelemzés</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="koltsegek.html"><span>Költségek becslése</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kiegyensulyozas.html"><span>Kiegyensúlyozás</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projektdokumentacio.html"><span>Projektdukumentáció</span></a>
+                  <a class="nav-link" href="forras.html"><span>Források</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="forras.html"><span>Források</span></a>
-            </li>
-              </ul>
+                </ul>
+              </div>
             </div>
-          </nav>
+          </div>
+        </nav>
     </header>
     <br>
     <main>
         <div id="body" class="container">
-        <h1>Projektdokumentáció jelentősége:</h1>
-<p>A projekt sikerének alapja a pontos, naprakész dokumentáció.
-Biztosítja a projekt követhetőségét, ellenőrizhetőségét.
-Minden fázisnak konkrét, dokumentált eredménye kell, hogy legyen.
-Projekt életciklusának szakaszai és dokumentumai:
-Projektdefiniálás (Probléma felismerése, célok meghatározása)</p>
-<h3>Projektdefiniálás dokumentumai:</h3>
-<ul> 
-    <li>Megvalósíthatósági tanulmány</li>
-    <li>Cselekvési terv</li>
-    <li>SWOT analízis</li>
-    <li>Logikai keretmátrix</li>
-    <li>Projekttervezés (Feladatok, erőforrások és ütemezés meghatározása)</li>
-</ul>
-<h3>Projekttervezés dokumentumai:</h3>
-<ul>
-    <li>Projektalapító okirat</li>
-    <li>Kommunikációs terv</li>
-    <li>Tevékenységfelelős-mátrix</li>
-    <li>Kockázatelemzés</li>
-    <li>Kockázati napló</li>
-    <li>Projektirányítás (Végrehajtás) (Terv szerinti lebonyolítás, problémák kezelése)</li>
-</ul>
-<h3>Projektirányítás (végrehajtás) dokumentumai:</h3>
-<ul>
-    <li>Feladatkijelölő adatlap</li>
-    <li>Megbízási szerződés</li>
-    <li>Problémanapló</li>
-    <li>Helyzetjelentés</li>
-    <li>Projektzárás és értékelés (Tapasztalatok összegzése, eredmények rögzítése)</li>
-</ul>
+          <h2>Projektdokumentáció</h2>
+          <p>A projektek menedzselésének kulcsfontosságú területe a projektdokumentáció. A projekt sikerének alapfeltétele a döntések megfelelő szintű előkészítése, aminek biztosítéka a pontos, naprakész tájékoztatási rendszer és dokumentáció. lehetővé teszi, hogy a projekt megvalósítása nyomon követhető legyen, az egyes tevékenységek eredményeit ellenőrizni lehessen.</p>
 
+<p>A projekt tervezésének és megvalósításának minden fázisa konkrét, jól dokumentálható eredménnyel kell, hogy záruljon. A lezárult szakasz outputja a következő szakasz inputja lesz.</p>
 
-<h3>Projektzárás és -értékelés dokumentumai:</h3>
+<p>Ehhez egy négyfázisú életciklus modellt használunk Ebben a modellben az alábbi szakaszokat (fázisokat) különböztetjük meg:</p>
+
+<h3>Projektdefiniálás</h3>
+<p>Ez a projekt-előkészítés fázisa, ahol megfogalmazódik egy probléma, megoldásra váró helyzet, mely beavatkozást igényel. A probléma felismerésén
+túl a definiálás során kell meghozni a döntést, hogy az adott szituáció megoldására projektet indítunk. A projektdefiniálás szakasza a projekt tényleges elindításával – vagyis a projektalapító okirat elfogadásával zárul.</p>
+
+<h3>Projekttervezés</h3>
+<p>A projektcélok meghatározása után ebben a fázisban a rögzített célok eléréséhez szükséges tevékenységeket tervezzük meg. A tervdokumentáció
+elkészítésével rögzítjük az elvégzendő feladatokat és behatároljuk a megvalósításban közreműködők felelősségét és az együttműködés és kommunikáció szabályait.</p>
+
+<h3>Projektirányítás (végrehajtás)</h3>
+<p>A projekt életciklusában ez a szakasz a második fázisban elkészült tervek implementálásának időszaka tehát az elkészült tervek alapján a végrehajtás fázisában a projekttevékenységek tényleges lebonyolítása zajlik. ebben a szakaszban a projekt előrehaladását, az elkészült fázisok értékelését, valamint a felmerülő problémák megoldására tett kísérleteket kell elsősorban dokumentálni.</p>
+
+<h3>Projektzárás és értékelés</h3>
+<p>A zárás során megtörténik a tevékenységek lezárása, a projekttermékek átadása és a költségekkel, erőforrásokkal való elszámolás és a projekt értékelése. Az értékelés során összegyűjtjük a megvalósítás során szerzett tapasztalatainkat, számba vesszük a megvalósult vagy meghiúsult tevékenységeket és összegezzük benyomásainkat, hogy mindezeket egy későbbi projekt során felhasználhassuk.</p>
+
+<h3>Megvalósíthatósági tanulmány</h3>
+<p>A megvalósíthatósági tanulmány célja, hogy kellő információval szolgáljon a projekt lehetséges kimeneteit
+  illetően.</p>
+<p>Fő funkciója:</p>
 <ul>
-    <li>Projektzáró jelentés</li>
-    <li>Projektértékelő jelentés</li>
+  <li>végkövetkeztetés</li>
+  <li>javaslat megfogalmazása</li>
 </ul>
+<p>Az érintettek elsősorban a megvalósíthatósági tanulmány alapján tudnak felelős
+  döntést hozni a projekt elfogadásáról vagy elutasításáról. Éppen ezért a tanulmánynak bizonyítania (vagy cáfolnia) kell, hogy a befektetett munka, pénz
+  végül megtérül-e és a meghatározott célok megvalósulnak-e.</p>
 
+<h3>A megvalósíthatósági tanulmány részei:</h3>
+<ol>
+  <li>Projekt célja – pontos, konkrét, értelmezhető célmeghatározás.</li>
+  <li>Szükségletelemzés – a jelenlegi helyzet bemutatása mellett tartalmazza a
+    tervezett tevékenységek szükségességének indoklását, várható hatásait.</li>
+  <li>Projekt hatóköre – a projekt tartalmi összefoglalása, főbb tevékenységek
+    felsorolása.</li>
+  <li>Ütemterv – a tervezett konkrét lépések bemutatása, főbb mérföldkövek,
+    azokhoz kapcsolódó határidők rögzítése.</li>
+  <li>Stakeholder-elemzés – projektben érintett személyek bemutatása.</li>
+  <li>Költségelemzés – a projekt finanszírozásával kapcsolatos pénzügyi elemzés; a beruházási költségek meghatározása, különös tekintettel az ún. költség–haszon elemzésre (Cash-flow).</li>
+  <li>Javaslatok, ajánlások megfogalmazása – megvalósíthatósággal kapcsolatos következtetések.</li>
+  <li>Kockázatelemzés, érzékenységvizsgálat – a projektvégrehajtással kapcsolatos bizonytalanságok szisztematikus kezelése.</li>
+</ol>
+
+<h3>Projektalapító okirat</h3>
+<p>Az alapító okirat lényegét tekintve a projekt bejelentésének dokumentuma.
+  Fő funkciója a projektdefiniálás, vagyis a projekttel kapcsolatos leglényegesebb információk rövid, írásos összefoglalása. Céljainak megfelelően az alapító
+  okirat időben megelőzi az összes többi hivatalos dokumentumot. Az alapító okirat tartalmazza a projekt pontos nevét, megnevezi és ezáltal döntési jogkörrel ruházza fel a projektmenedzsert.</p>
+<p>Az alapító okiratnak nem kell tartalmaznia részletes ütemtervet, hiszen megfogalmazásakor ilyen valószínűleg még nem is áll rendelkezésre. Inkább arról van
+  szó, hogy röviden összefoglalja a projekt hátterét, alapvető céljait, a végrehajtás során együttműködő partnerek szándékait, esetleg megindokolja a
+  tervezett tevékenységek szükségességét.</p>
 <h3>Fontos megjegyzések:</h3>
 <p>A projektdokumentáció csak a projektmenedzsmenthez tartozó dokumentumokat tartalmazza (pénzügyi, jogi iratok stb. nem szerepelnek).
-A projekt egyes fázisai egymásra épülnek, a dokumentáció ezt a folyamatot támogatja.
-Mintaprojekt alapján sablonok és kitöltött példák is bemutatásra kerülnek.</p>
+A projekt egyes fázisai egymásra épülnek, a dokumentáció ezt a folyamatot támogatja.</p>
+
+
+
         </div>
+        <br>
     </main>
 </body>
 </html>

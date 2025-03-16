@@ -23,10 +23,17 @@ body{
     border: 1px solid black;
     border-radius: 15px;
     background-color: lightblue;
+    box-shadow: 2px 2px;
+    
 }
 
 
 #fekete{
     color: black;
 }
-
+#feher{
+    color: white;
+}
+h5{
+    color: white;
+}

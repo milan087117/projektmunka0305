@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Költségek becslése</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,61 +13,86 @@
         <h1 class="display-4">Projektmenedzsment</h1></div>
         <img id="mechwart" src="mehwart_f1dce688ee.png" alt="Mechwart logó" title="Mechwart logó">
        
-        <nav class="navbar navbar-expand-sm">
-
-            <div class="container-fluid">
-              <ul class="navbar-nav" style="margin: auto;">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><span>Kezdőoldal</span></a>
+        <nav class="navbar navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" id="feher" href="#">Projektmunka</a>
+            <button class="navbar-toggler-bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Oldalak:</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav" style="margin: auto;">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html"><span>Kezdőoldal</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cpm.html"><span>CPM</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mpm.html"><span>MPM</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kockazatelemzes.html"><span>Kockázatelemzés</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="koltsegek.html"><span>Költségek becslése</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="kiegyensulyozas.html"><span>Kiegyensúlyozás</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projektdokumentacio.html"><span>Projektdukumentáció</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="cpm.html"><span>CPM</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mpm.html"><span>MPM</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="kockazatelemzes.html"><span>Kockázatelemzés</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="koltsegek.html"><span>Költségek becslése</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kiegyensulyozas.html"><span>Kiegyensúlyozás</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projektdokumentacio.html"><span>Projektdukumentáció</span></a>
+                  <a class="nav-link" href="forras.html"><span>Források</span></a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="forras.html"><span>Források</span></a>
-            </li>
-              </ul>
+                </ul>
+              </div>
             </div>
-          </nav>
+          </div>
+        </nav>
     </header>
     <br>
     <main>
       <div id="body" class="container">
-        Becslés típusai:
+        <h3>Becslés típusai:</h3>
 
-Hasra ütés alapján: Nagy tévedési lehetőség, célja, hogy eldöntsük, érdemes-e pontosabb becslést készíteni.
-Durva nagyságrend (ROM): Nagy szórású becslés, előző projektek adatain alapul, de nagy bizonytalanságot tartogat.
-Részletes becslés (lentről felfelé): A legpontosabb módszer, feladatonkénti idő- és költségbecsléssel.
-Szakaszos becslés:
+        <p>
+          <ul>
+            <li>Hasra ütés alapján: Nagy tévedési lehetőség, célja, hogy eldöntsük, érdemes-e pontosabb becslést készíteni.</li>
+            <li>Durva nagyságrend (ROM): Nagy szórású becslés, előző projektek adatain alapul, de nagy bizonytalanságot tartogat.</li>
+            <li>Részletes becslés (lentről felfelé): A legpontosabb módszer, feladatonkénti idő- és költségbecsléssel.</li>
+          </ul></p>
+        
+        <h3>Szakaszos becslés:</h3>
+          <p>A projektet szakaszokra bontják, és minden szakaszhoz részletes költség- és időbecslést készítenek.
+            <ul>
+              <li>Előnyei: A projekt bármikor leállítható, csökkenti a kockázatokat, és pontosabb előrejelzést ad.</li>
+              <li>Hátrányai: Váratlan költségek merülhetnek fel, és a csapat nem mindig vállalja a felelősséget a költségtúllépésekért.</li>
+            </ul></p>
+          
+          
+          <h3>Arányos becslés (fentről lefelé):</h3>
 
-A projektet szakaszokra bontják, és minden szakaszhoz részletes költség- és időbecslést készítenek.
-Előnyei: A projekt bármikor leállítható, csökkenti a kockázatokat, és pontosabb előrejelzést ad.
-Hátrányai: Váratlan költségek merülhetnek fel, és a csapat nem mindig vállalja a felelősséget a költségtúllépésekért.
-Arányos becslés (fentről lefelé):
+          <p>A projekt egészére készítenek becslést, majd az egyes szakaszokhoz százalékos elosztást rendelnek.
+          Alapja a WBS (Work Breakdown Structure), és segíti a pontosabb számításokat.</p>
+          <h3>Parametrikus becslés:</h3>
 
-A projekt egészére készítenek becslést, majd az egyes szakaszokhoz százalékos elosztást rendelnek.
-Alapja a WBS (Work Breakdown Structure), és segíti a pontosabb számításokat.
-Parametrikus becslés:
+            <p>A munkavégzés alapegységét egy súlyszámmal szorozzák, hogy meghatározzák a projekt teljes költségét és időtartamát.
+            Példa: Ha egy ember naponta 25 alkatrészt gyárt, akkor 250 alkatrész legyártása 10 napot vesz igénybe.</p>
 
-A munkavégzés alapegységét egy súlyszámmal szorozzák, hogy meghatározzák a projekt teljes költségét és időtartamát.
-Példa: Ha egy ember naponta 25 alkatrészt gyárt, akkor 250 alkatrész legyártása 10 napot vesz igénybe.
-Összefoglalva: A becslési technikák a projekt előrejelzésének alapját képezik, és több módszer is alkalmazható a különböző szakaszokban, a pontosság és a kockázatcsökkentés érdekében. A szakaszos becslés a legpontosabb, de fontos a különböző módszerek kombinálása a legjobb eredmény érdekében.
+          <h3>Lentről felfelé becslés:</h3>
+          <p>A legpontosabb becslési technika. Feladatonként megbecsülik az időt és költséget, majd a kapott értékeket összeadják vagy kumulálják. Mivel nem ismert
+            teljes pontossággal a projekt minden részlete előre, így általában ezt a módszert
+            a részletes szakaszbecsléseknél alkalmazzák.</p>
+          <h3>Összefoglalva:</h3> 
+          <p>A becslési technikák a projekt előrejelzésének alapját képezik, és több módszer is alkalmazható a különböző szakaszokban, a pontosság és a kockázatcsökkentés érdekében. A szakaszos becslés a legpontosabb, de fontos a különböző módszerek kombinálása a legjobb eredmény érdekében.</p>
       </div>
+      <br>
     </main>
 </body>
 </html>
